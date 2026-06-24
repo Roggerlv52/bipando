@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exclusão de Conta - Bipando</title>
+    <style>
+        :root {
+            --bg-deep:      #1a272f;
+            --bg-card:      #24333d;
+            --accent-green: #2e9e5b;
+            --accent-sky:   #87ceeb;
+            --text-primary: #f0f4f6;
+            --text-muted:   #8ca5b2;
+            --border:       rgba(135, 206, 235, .1);
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-deep);
+            color: var(--text-primary);
+            line-height: 1.6;
+            padding: 40px 20px;
+            margin: 0;
+        }
+
+        .container {
+            max-width: 750px;
+            margin: 0 auto;
+            background: var(--bg-card);
+            padding: 40px;
+            border-radius: 24px;
+            border: 1px solid var(--border);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+        }
+
+        h1 {
+            color: var(--text-primary);
+            border-bottom: 2px solid var(--accent-green);
+            padding-bottom: 12px;
+            margin-top: 0;
+            font-size: 28px;
+        }
+
+        h2 {
+            color: var(--accent-sky);
+            font-size: 20px;
+            margin-top: 30px;
+        }
+
+        p, li {
+            color: var(--text-muted);
+            font-size: 16px;
+        }
+
+        ol, ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        .alert-box {
+            background: rgba(239, 68, 68, 0.08);
+            border: 1px solid rgba(239, 68, 68, 0.2);
+            border-radius: 12px;
+            padding: 20px;
+            margin-top: 25px;
+        }
+
+        .alert-box h3 {
+            color: #ef4444;
+            margin-top: 0;
+        }
+
+        .btn-contact {
+            display: inline-block;
+            background: var(--accent-green);
+            color: white;
+            padding: 12px 24px;
+            border-radius: 100px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 15px;
+            transition: background 0.3s;
+        }
+
+        .btn-contact:hover {
+            background: #248a4d;
+        }
+
+        footer {
+            margin-top: 40px;
+            text-align: center;
+            font-size: 13px;
+            color: rgba(255, 255, 255, 0.2);
+            border-top: 1px solid var(--border);
+            padding-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Solicitação de Exclusão de Conta e Dados</h1>
+        <p>Esta página foi criada pelo desenvolvedor <strong>Roger Oliveira</strong> para permitir que os utilizadores do aplicativo <strong>Bipando — Controle de Validade</strong> solicitem a eliminação total e definitiva da sua conta e de todos os dados armazenados na nossa plataforma, em conformidade com as diretrizes da Google Play Store.</p>
+
+        <h2>Como solicitar a exclusão da sua conta:</h2>
+        <p>Oferecemos duas vias simples para efetuar a eliminação da sua conta e dados:</p>
+        
+        <ol>
+            <li>
+                <strong>Diretamente na Aplicação (Eliminação Instantânea):</strong>
+                <ul>
+                    <li>Abra o aplicativo <strong>Bipando</strong> no seu dispositivo Android.</li>
+                    <li>No menu lateral de navegação (Drawer), aceda à opção <strong>Perfil</strong>.</li>
+                    <li>No fundo do ecrã, clique no botão <strong>Excluir Conta</strong>.</li>
+                    <li>Confirme a exclusão no diálogo de segurança. A sua conta e dados serão eliminados imediatamente de forma definitiva.</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Caso já tenha desinstalado o aplicativo (Via Web):</strong>
+                <ul>
+                    <li>Se já não tem o aplicativo instalado, envie um e-mail de solicitação para o nosso suporte técnico: <strong style="color: var(--text-primary);">bipandosuporte@gmail.com</strong>.</li>
+                    <li>No assunto do e-mail, escreva: <em>"Exclusão de Conta - Bipando"</em>.</li>
+                    <li>No corpo da mensagem, informe o <strong>endereço de e-mail</strong> que utilizava para fazer login na aplicação.</li>
+                    <li>O nosso suporte processará e eliminará a sua conta de forma manual no prazo máximo de <strong>7 dias úteis</strong>.</li>
+                </ul>
+            </li>
+        </ol>
+
+        <div class="alert-box">
+            <h3>⚠️ Quais dados serão excluídos de forma permanente?</h3>
+            <p>Ao processar a exclusão, os seguintes dados serão eliminados dos nossos servidores de forma irreversível:</p>
+            <ul>
+                <li><strong>Informações de Perfil:</strong> Nome, e-mail e registo de autenticação de utilizador (Firebase Auth).</li>
+                <li><strong>Inventário de Produtos:</strong> Todos os produtos cadastrados, códigos de barras, anotações e histórico de validades.</li>
+                <li><strong>Imagens de Produtos:</strong> Todas as fotos personalizadas enviadas para o armazenamento em nuvem (Firebase Storage).</li>
+                <li><strong>Categorias:</strong> Todas as categorias personalizadas criadas na sua conta.</li>
+            </ul>
+            <p><em>Nota de retenção legal:</em> Apenas manteremos dados históricos agregados estritamente necessários para fins fiscais e contabilísticos caso tenha efetuado a assinatura de um Plano Premium ativo na Google Play Store.</p>
+        </div>
+
+        <div style="text-align: center; margin-top: 30px;">
+            <a href="mailto:bipandosuporte@gmail.com?subject=Exclusao de Conta - Bipando" class="btn-contact">Solicitar Exclusão via E-mail</a>
+        </div>
+
+        <footer>
+            © 2026 Bipando · Desenvolvido por Roger Oliveira · Todos os direitos reservados.
+        </footer>
+    </div>
+</body>
+</html>
